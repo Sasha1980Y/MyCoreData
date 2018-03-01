@@ -12,6 +12,10 @@
 		7FB43F042047F89D001492B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB43F022047F89D001492B3 /* Main.storyboard */; };
 		7FB43F062047F89D001492B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FB43F052047F89D001492B3 /* Assets.xcassets */; };
 		7FB43F092047F89D001492B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB43F072047F89D001492B3 /* LaunchScreen.storyboard */; };
+		7FB43F122047F8C4001492B3 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FB43F102047F8C4001492B3 /* Model.xcdatamodeld */; };
+		7FB43F142047F979001492B3 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB43F132047F979001492B3 /* CoreDataManager.swift */; };
+		7FB43F172047F9EC001492B3 /* Model+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB43F152047F9EC001492B3 /* Model+CoreDataClass.swift */; };
+		7FB43F182047F9EC001492B3 /* Model+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB43F162047F9EC001492B3 /* Model+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		7FB43F052047F89D001492B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FB43F082047F89D001492B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FB43F0A2047F89D001492B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FB43F112047F8C4001492B3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		7FB43F132047F979001492B3 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		7FB43F152047F9EC001492B3 /* Model+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7FB43F162047F9EC001492B3 /* Model+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +46,8 @@
 		7FB43EF22047F89D001492B3 = {
 			isa = PBXGroup;
 			children = (
+				7FB43F152047F9EC001492B3 /* Model+CoreDataClass.swift */,
+				7FB43F162047F9EC001492B3 /* Model+CoreDataProperties.swift */,
 				7FB43EFD2047F89D001492B3 /* MyCoreData */,
 				7FB43EFC2047F89D001492B3 /* Products */,
 			);
@@ -56,10 +66,12 @@
 			children = (
 				7FB43EFE2047F89D001492B3 /* AppDelegate.swift */,
 				7FB43F002047F89D001492B3 /* ViewController.swift */,
+				7FB43F132047F979001492B3 /* CoreDataManager.swift */,
 				7FB43F022047F89D001492B3 /* Main.storyboard */,
 				7FB43F052047F89D001492B3 /* Assets.xcassets */,
 				7FB43F072047F89D001492B3 /* LaunchScreen.storyboard */,
 				7FB43F0A2047F89D001492B3 /* Info.plist */,
+				7FB43F102047F8C4001492B3 /* Model.xcdatamodeld */,
 			);
 			path = MyCoreData;
 			sourceTree = "<group>";
@@ -136,8 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FB43F172047F9EC001492B3 /* Model+CoreDataClass.swift in Sources */,
 				7FB43F012047F89D001492B3 /* ViewController.swift in Sources */,
 				7FB43EFF2047F89D001492B3 /* AppDelegate.swift in Sources */,
+				7FB43F142047F979001492B3 /* CoreDataManager.swift in Sources */,
+				7FB43F122047F8C4001492B3 /* Model.xcdatamodeld in Sources */,
+				7FB43F182047F9EC001492B3 /* Model+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +338,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7FB43F102047F8C4001492B3 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7FB43F112047F8C4001492B3 /* Model.xcdatamodel */,
+			);
+			currentVersion = 7FB43F112047F8C4001492B3 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7FB43EF32047F89D001492B3 /* Project object */;
 }
